@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Fixed Header -->
+        <header id="main-header">
+            <h1 id="app-title">Programming Mock Tests</h1>
+            <div id="header-controls">
+                <span id="section-title">Home</span>
+                <button id="dark-mode-toggle">🌙 Dark Mode</button>
+            </div>
+        </header>
+
+        <!-- Home Page -->
+        <section id="home" class="section active">
+            <div id="user-info">
+                <p id="user-name">User: <span id="name-display">Anonymous</span> <span id="edit-name-icon" title="Edit Name">✏️</span></p>
+                <input id="name-input" type="text" placeholder="Enter your name" style="display: none;">
+            </div>
+            <div id="stats">
+                <div class="card">
+                    <h3>Total Questions Attempted</h3>
+                    <p id="total-attempted">0</p>
+                </div>
+                <div class="card">
+                    <h3>Overall Percentage</h3>
+                    <p id="overall-percentage">0%</p>
+                </div>
+            </div>
+            <div id="past-quizzes">
+                <!-- Dynamically populated -->
+            </div>
+            <button id="start-new-quiz" class="btn primary">Start New Quiz</button>
+        </section>
+
+        <!-- Subject Selection -->
+        <section id="subject-select" class="section">
+            <h2>Select Subject</h2>
+            <div id="subjects" class="options-grid">
+                <!-- Dynamically populated -->
+            </div>
+            <button id="back-to-home" class="btn secondary">Back to Home</button>
+        </section>
+
+        <!-- Topic Selection -->
+        <section id="topic-select" class="section">
+            <h2>Select Topic</h2>
+            <div id="topics" class="options-grid">
+                <!-- Dynamically populated -->
+            </div>
+            <button id="back-to-subject" class="btn secondary">Back</button>
+        </section>
+
+        <!-- Difficulty Selection -->
+        <section id="difficulty-select" class="section">
+            <h2>Select Difficulty</h2>
+            <div id="difficulties" class="options-grid">
+                <button class="option-btn" data-difficulty="easy">Easy</button>
+                <button class="option-btn" data-difficulty="medium">Medium</button>
+                <button class="option-btn" data-difficulty="hard">Hard</button>
+            </div>
+            <button id="back-to-topic" class="btn secondary">Back</button>
+        </section>
+
+        <!-- Quiz Page -->
+        <section id="quiz" class="section">
+            <div id="quiz-header">
+                <div id="progress">Question <span id="current-q">1</span>/<span id="total-q">10</span></div>
+                <div id="stopwatch">00:00:00</div>
+            </div>
+            <div id="question-container">
+                <h3 id="question-text"></h3>
+                <div id="options" class="options-list">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+            <div id="quiz-controls">
+                <button id="prev-q" class="btn secondary" disabled>Previous</button>
+                <button id="next-q" class="btn primary">Next</button>
+                <button id="submit-quiz" class="btn primary" style="display:none;">Submit Quiz</button>
+            </div>
+        </section>
+
+        <!-- Result Page -->
+        <section id="result" class="section">
+            <h2>Quiz Result</h2>
+            <div id="result-stats" class="stats-grid">
+                <div class="card">
+                    <h3>Total Questions</h3>
+                    <p id="total-q-result"></p>
+                </div>
+                <div class="card">
+                    <h3>Attempted</h3>
+                    <p id="attempted-result"></p>
+                </div>
+                <div class="card">
+                    <h3>Not Attempted</h3>
+                    <p id="not-attempted-result"></p>
+                </div>
+                <div class="card">
+                    <h3>Correct Answers</h3>
+                    <p id="correct-result"></p>
+                </div>
+                <div class="card">
+                    <h3>Performance</h3>
+                    <p id="performance-result"></p>
+                </div>
+                <div class="card">
+                    <h3>Percentage</h3>
+                    <p id="percentage-result"></p>
+                </div>
+            </div>
+            <div id="result-controls">
+                <button id="go-to-home" class="btn primary">Go to Home</button>
+                <button id="analyze-quiz" class="btn secondary">Analyze Quiz</button>
+            </div>
+        </section>
+
+        <!-- Analyze Quiz Page -->
+        <section id="analyze" class="section">
+            <h2>Analyze Quiz</h2>
+            <div id="analyze-header">
+                <div id="analyze-progress">Question <span id="analyze-current-q">1</span>/<span id="analyze-total-q">10</span></div>
+            </div>
+            <div id="analyze-question-container">
+                <h3 id="analyze-question-text"></h3>
+                <div id="analyze-options" class="options-list">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+            <div id="analyze-controls">
+                <button id="analyze-prev" class="btn secondary" disabled>Previous</button>
+                <button id="analyze-next" class="btn primary">Next</button>
+                <button id="back-to-result" class="btn secondary">Back to Result</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

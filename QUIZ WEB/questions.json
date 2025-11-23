@@ -1,0 +1,121 @@
+[
+    
+    {
+        "subject": "c programming",
+        "topic": "nested for loop",
+        "difficulty": "medium",
+        "question": "Predict the output:\nfor(int i=1;i<=4;i++) {\n    for(int j=1;j<=4;j++) {\n        if(i+j==5) printf(\"X\");\n        else printf(\"O\");\n    }\n    printf(\"\\n\");\n}",
+        "options": [
+            "OOOX\nOOXO\nOXOO\nXOOO",
+            "OOOX\nOOXO\nOXOO\nOXXX",
+            "OOXO\nOXOO\nXOOO\nOOOO",
+            "OXOO\nXOOO\nOOOO\nOOOX"
+        ],
+        "correct": 0
+    },
+    {
+        "subject": "c programming",
+        "topic": "nested for loop",
+        "difficulty": "medium",
+        "question": "How many times will 'Hello' be printed?\nfor(int i=1;i<=3;i++) {\n    for(int j=i;j<=3;j++) {\n        printf(\"Hello\\n\");\n    }\n}",
+        "options": [
+            "3",
+            "6",
+            "5",
+            "4"
+        ],
+        "correct": 1
+    },
+    {
+        "subject": "c programming",
+        "topic": "nested for loop",
+        "difficulty": "medium",
+        "question": "What is the output?\nfor(int i=1;i<=3;i++) {\n    for(int j=1;j<=i;j++) {\n        printf(\"%d\", j);\n    }\n    printf(\"\\n\");\n}",
+        "options": [
+            "1\n12\n123",
+            "1\n23\n123",
+            "1\n12\n12",
+            "1\n2\n3"
+        ],
+        "correct": 0
+    },
+    {
+        "subject": "c programming",
+        "topic": "nested for loop",
+        "difficulty": "medium",
+        "question": "Predict the pattern printed by this code:\nfor(int i=1;i<=3;i++) {\n    for(int j=3;j>=i;j--) {\n        printf(\"*\");\n    }\n    printf(\"\\n\");\n}",
+        "options": [
+            "***\n**\n*",
+            "*\n**\n***",
+            "***\n***\n***",
+            "**\n**\n*"
+        ],
+        "correct": 0
+    },
+    {
+        "subject": "c programming",
+        "topic": "nested for loop",
+        "difficulty": "medium",
+        "question": "What will be the output?\nfor(int i=1;i<=3;i++) {\n    for(int j=1;j<=i;j++) {\n        printf(\"%d\", i+j);\n    }\n    printf(\"\\n\");\n}",
+        "options": [
+            "2\n34\n456",
+            "2\n23\n34",
+            "2\n34\n45",
+            "1\n23\n34"
+        ],
+        "correct": 2
+    },
+    {
+        "subject": "c programming",
+        "topic": "nested for loop",
+        "difficulty": "medium",
+        "question": "What will the following code print?\nfor(int i=1;i<=3;i++) {\n    for(int j=1;j<=3;j++) {\n        if(i%2==0) printf(\"E\");\n        else printf(\"O\");\n    }\n    printf(\"\\n\");\n}",
+        "options": [
+            "O O O\nE E E\nO O O",
+            "OOO\nEEE\nOOO",
+            "OEO\nEOE\nOEO",
+            "EEE\nOOO\nEEE"
+        ],
+        "correct": 1
+    },
+    {
+        "subject": "c programming",
+        "topic": "nested for loop",
+        "difficulty": "medium",
+        "question": "How many times will the inner loop execute?\nfor(int i=1;i<=4;i++) {\n    for(int j=1;j<=i;j++) {\n        printf(\"*\");\n    }\n}",
+        "options": [
+            "4",
+            "8",
+            "10",
+            "7"
+        ],
+        "correct": 2
+    },
+    {
+        "subject": "c programming",
+        "topic": "nested for loop",
+        "difficulty": "medium",
+        "question": "What pattern is printed?\nfor(int i=1;i<=3;i++) {\n    for(int j=1;j<=3;j++) {\n        if(j<=i) printf(\"*\");\n        else printf(\" \");\n    }\n    printf(\"\\n\");\n}",
+        "options": [
+            "*  \n** \n***",
+            "***\n** \n*  ",
+            "*\n**\n***",
+            "  *\n **\n***"
+        ],
+        "correct": 0
+    },
+    {
+        "subject": "c programming",
+        "topic": "nested for loop",
+        "difficulty": "medium",
+        "question": "Predict the output:\nfor(int i=1;i<=3;i++) {\n    for(int j=1;j<=3;j++) {\n        printf(\"%d\", i*j);\n    }\n    printf(\"\\n\");\n}",
+        "options": [
+            "1 2 3\n2 4 6\n3 6 9",
+            "1 2 3\n1 4 6\n1 6 9",
+            "1 2 3\n2 4 6\n3 5 7",
+            "1 2 3\n2 4 5\n3 6 9"
+        ],
+        "correct": 0
+      }
+]
+
